@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: S3 bucket for our CICD PR
 
-parameters:
+Parameters:
   Environment:
     Type: String
     Description: The environment name (e.g., dev, test, prod)
@@ -24,7 +24,7 @@ Resources:
         - Key: Name
           Value: GithubActionsTesting
 
-  Outputs:
-    BucketName:
-      Description: The name of the S3 bucket
-      Value: !Ref MyS3Bucket
+Outputs:
+  BucketName:
+    Description: The name of the S3 bucket
+    Value: !Ref MyS3Bucket
