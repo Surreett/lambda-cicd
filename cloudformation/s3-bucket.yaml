@@ -19,7 +19,7 @@ parameters:
         Tags:
           - Key: Environment
             Value: !Ref Environment
-          - Key: Name
+          - Key: Project
             Value: GitHubActionsTesting
 
   Outputs:
